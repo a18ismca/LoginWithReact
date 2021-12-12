@@ -1,0 +1,17 @@
+#loginTable{
+    border: 2px double;
+    width: 200px;
+    height: 120px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#infoTable{
+    border: 2px dotted;
+    width: 200px;
+    height: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
