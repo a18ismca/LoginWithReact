@@ -21,11 +21,16 @@ function Login(){
                   <br></br>
 
                   <div id='infoTable'>
-                    <p id='statement'>
+                    <p id='infoText'>
                         Welcome to the login site!
                         Please enter username and password.
                     </p>
-                  </div>
+                    </div>
+                    <h2 id="statement">
+                        
+                    </h2>
+                   
+                  
         </React.Fragment>
     );
 }
@@ -89,14 +94,14 @@ function loginAttemptHardcode(){
     } 
     // If password AND username are empty, make a statement.
     else if (getUsername === "" && getPassword === ""){
-        document.getElementById("statement").innerHTML = "Enter username and password before attempting to log in!"
+        document.getElementById("statement").innerHTML = "Enter username before attempting to log in!"
     } 
     // If password is empty, make a statement.
     else if (getUsername.length > 0 && getPassword === ""){
         document.getElementById("statement").innerHTML = "Enter password before attempting to log in!"
     } 
     // If username is empty, make a statement.
-    else if (getUsername === "" && getPassword.length !== ""){
+    else if (getUsername === "" && getPassword.length > 0){
         document.getElementById("statement").innerHTML = "Enter username before attempting to log in!"
     }  else{
 
@@ -134,10 +139,10 @@ function noAttemptsLeft(){
 
 
 
-
 function removeObjectsOnScreen(){
     document.getElementById("loginTable").remove();
     document.getElementById("header").remove();
+    document.getElementById("infoTable").remove();
 }
 
 export default Login;
